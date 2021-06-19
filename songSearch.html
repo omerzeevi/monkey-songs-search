@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Monkey Songs Search</title>
+    <script type="module" src="js_songs/appSongs.js"></script>
+    <style>
+        #container_img{
+            background-image: url("songs_image/chimp-music.jpg");
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center" id="container_img">
+        <h1 class="text-danger">Pick Your Poison</h1>
+        <div class="container d-flex p-4 w-50">
+            <input id="id_input" placeholder="Search for bands or songs..." class="form-control" id="id_search" type="text">
+            <button id="btn_search" class='btn btn-success mb-1'>Search</button>
+        </div>
+        <div id="id_row" class="container">
+        </div>
+    </div>
+</body>
+
+</html>
